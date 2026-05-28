@@ -1,0 +1,20 @@
+fastapi
+uvicorn[standard]
+streamlit
+pymongo
+python-docx
+pdfplumber
+pytesseract
+python-multipart
+pydantic
+python-jose[cryptography]
+passlib[bcrypt]
+spacy
+pillow
+python-dotenv
+httpx
+pandas
+requests
+jinja2
+python-magic-bin; sys_platform == 'win32'
+python-magic; sys_platform != 'win32'

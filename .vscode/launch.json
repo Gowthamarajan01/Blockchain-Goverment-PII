@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Backend (Debug FastAPI)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/backend/main.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "python": "${workspaceFolder}/backend/venv/Scripts/python.exe"
+    },
+    {
+      "name": "Launch Browser (Vite Frontend)",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/frontend",
+      "preLaunchTask": "Run Frontend (Vite)"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Launch Full Stack (Backend + Frontend)",
+      "configurations": [
+        "Launch Backend (Debug FastAPI)",
+        "Launch Browser (Vite Frontend)"
+      ],
+      "stopAll": true
+    }
+  ]
+}

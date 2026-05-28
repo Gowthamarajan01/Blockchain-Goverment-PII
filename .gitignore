@@ -1,0 +1,38 @@
+# Virtual environments
+venv/
+.venv/
+backend/venv/
+backend/.venv/
+env/
+.env/
+.env
+
+# Node dependencies
+node_modules/
+frontend/node_modules/
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# Local data and logs
+data/
+backend/data/
+*.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+Thumbs.db
+db.db
+.DS_Store
